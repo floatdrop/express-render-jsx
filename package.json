@@ -1,6 +1,6 @@
 {
   "name": "express-render-jsx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Render jsx templates from express",
   "license": "MIT",
   "repository": "floatdrop/express-render-jsx",
