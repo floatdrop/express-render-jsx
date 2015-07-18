@@ -3,17 +3,10 @@
 var fs = require('fs');
 var babel = require('babel');
 var React = require('react');
+var requireFromString = require('require-from-string');
 
 var templateCache = {};
 var contentCache = {};
-var Module = module.constructor;
-
-function requireFromString(code, filename) {
-	var m = new Module();
-	m.paths = module.paths;
-	m._compile(code, filename);
-	return m.exports;
-}
 
 module.exports = function (filePath, options, callback) {
 	try {
