@@ -18,7 +18,7 @@ var expressRenderJsx = require('express-render-jsx');
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
-app.engine('jsx', require('express-render-jsx'));
+app.engine('jsx', expressRenderJsx());
 ```
 
 Your views should be node modules that export a React component. Let's assume you have this file in `views/index.jsx`:
